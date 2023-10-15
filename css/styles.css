@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #e1e1e1;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px; /* Adjusted padding */
+    background-color: #202020; /* Teal header */
+}
+
+.main-content{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e1e1e1;
+    color: #333;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 40px; /* Increased gap */
+    overflow: auto; /* new property: clear the float */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+.logo-container {
+    float: left; /* makes it float to the left, change as needed */
+    height: 35px; /* or any size */
+    width: 35px; /* should be equal to height */
+    overflow: hidden; /* ensures excess image is clipped */
+    border-radius: 50%; /* makes it circular */
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+.logo {
+    display: block;
+    width: 100%; /* makes image fill the container */
+    height: auto; /* maintains aspect ratio */
+    object-fit: cover; /* ensures image covers entire area */
+}
+
+.search-icon, .profile-icon {
+    width: 25px;
+    height: 25px;
+    background-color: #fff; /* Placeholder, replace with actual icons */
+    border-radius: 50%;
+}
+
+.about {
+    padding: 100px 50px; /* Increased padding */
+    margin: 0 auto;
+    height: 300px;
+    background: linear-gradient(35deg, rgb(174, 174, 174), rgb(204, 204, 204)); 
+    text-align: right;
+}
+
+button {
+    background-color: #202020;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.projects-section{
+    padding: 20px; /* Increased padding */
+}
+
+.portfolio-section {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 8px;
+    max-width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+.card img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-footer {
+    flex: 1;
+    background-color: #333; /* dark background */
+    color: white; /* light text */
+    text-align: center; /* center the content */
+    padding: 10px 20px;
+}
+
+.footer-content a {
+    color: white; /* light link color */
+    text-decoration: none; /* removes underline */
+    display: inline-block; /* organize links side by side */
+    margin: 0 10px;
+}
+
+.social-icon {
+    width: 20px; /* smaller icon width */
+    height: 20px; /* and height */
+    vertical-align: middle; /* align with the text */
+    margin-right: 8px; /* space between icon and text */
+}
