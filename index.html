@@ -8,49 +8,55 @@
 </head>
 <body>
     <header>
-        <!-- Image container -->
-        <div class="logo-container">
-            <a href="index.html"><img src="Images/RobotUserIcon.png" alt="logo" class="logo"/></a>  <!-- ensure you replace 'path_to_your_image.jpg' with your actual image file's path -->
-        </div>
+        <div class="header-content">
+            <!-- Image container -->
+            <div class="logo-container">
+                <a href="index.html"><img src="Images/RobotUserIcon.png" alt="logo" class="logo"/></a>  <!-- ensure you replace 'path_to_your_image.jpg' with your actual image file's path -->
+            </div>
 
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <!-- Continue with other links... -->
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- Continue with other links... -->
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="about" class="about">
-        <h1>Alex Hiser</h1>
-        <p>(Fill with appropriate content)</p>
-        <a href="about.html"><button>Learn More</button></a>
+        <div class="about-container">
+            <h1 style="font-size:60px">Alex Hiser</h1>
+            <p>(Fill with appropriate content)</p>
+            <a href="about.html"><button>Learn More</button></a>
+        </div>
     </section>
 
     <section id="projects" class="projects-section">
-        <h1>Projects</h1>
-        <section class="portfolio-section">
-            <!-- Card 1 -->
-            <a href="black-hole-renderer.html" class="card-link">
-                <div class="card">
-                    <img src="Images/NewStarMap4k.png" alt="Black Hole">
-                    <h3>Black Hole Renderer</h3>
-                    <p>Project description</p>
-                </div>
-            </a>
-        
-            <!-- Card 2 -->
-            <a href="another-project.html" class="card-link">
-                <div class="card">
-                    <img src="Images/NewStarMap4k.png" alt="Black Hole">
-                    <h3>Black Hole Renderer</h3>
-                    <p>Project description</p>
-                </div>
-            </a>
+        <div class="projects-container">
+            <h1>Projects</h1>
+            <div class="portfolio-section">
+                <!-- Card 1 -->
+                <a href="black-hole-renderer.html" class="card-link">
+                    <div class="card">
+                        <img src="Images/BlackHoleAccretionDisk.png" alt="Black Hole">
+                        <h3>Black Hole Renderer</h3>
+                        <p>Project description</p>
+                    </div>
+                </a>
             
-            <!-- Add more cards as needed -->
-        </section>
+                <!-- Card 2 -->
+                <a href="spacetime.html" class="card-link">
+                    <div class="card">
+                        <img src="Images/RelativisticSpaceShip.png" alt="Space Time">
+                        <h3>Space Time Simlator</h3>
+                        <p>Project description</p>
+                    </div>
+                </a>
+                
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
     </section>
     
     <!-- Footer -->
